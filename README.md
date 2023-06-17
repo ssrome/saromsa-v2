@@ -1,6 +1,40 @@
+[![CI/CD](https://github.com/ssrome/saromsa-v2/actions/workflows/deploy-to-vercel.yaml/badge.svg)](https://github.com/ssrome/saromsa-v2/actions/workflows/deploy-to-vercel.yaml)
+
 # SaRomSa - v2
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Technologies used
+
+- [Next.js](https://nextjs.org/)
+- [Jest](https://jestjs.io/)
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
+- [Cypress](https://www.cypress.io/)
+- This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+
+## Deployed using
+
+- [GitHub Actions](https://github.com/features/actions)
+- [Vercel](https://vercel.com/)
+
+## Prerequisites
+
+- [NodeJS](https://nodejs.org/en/)
+- [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+
+## Installation
+
+1. Clone the repo
+
+```
+git clone https://github.com/ssrome/saromsa-v2.git
+```
+
+2. Install packages into the `saromsa-v2` directory
+
+```
+npm install
+```
+
+## Run application
 
 ## Getting Started
 
@@ -10,24 +44,9 @@ First, run the development server:
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Then go to [http://localhost:3000](http://localhost:3000)
 
 ## Deploy on Vercel
 
