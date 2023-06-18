@@ -4,6 +4,12 @@ import "@testing-library/jest-dom";
 
 describe("Not found", () => {
   it("renders", () => {
+    const component = render(<NotFound />);
+
+    expect(component).toBeTruthy();
+  });
+
+  it("shows not found text", () => {
     render(<NotFound />);
 
     expect(screen.getByText(/not found/i)).toBeInTheDocument();
