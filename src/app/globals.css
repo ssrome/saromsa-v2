@@ -18,11 +18,34 @@
 
 html,
 body {
+  height: 100%;
+}
+
+body {
+  background-color: var(--first-color);
+  color: var(--primary-text-color);
+  font-family: Verdana, Tahoma, Arial, sans-serif;
+  font-size: 1.1em;
+  margin: 0 auto;
   max-width: 100vw;
   overflow-x: hidden;
 }
 
 a {
-  color: inherit;
+  color: var(--link-primary-color);
   text-decoration: none;
+}
+
+a:hover {
+  color: var(--fourth-color);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
 }

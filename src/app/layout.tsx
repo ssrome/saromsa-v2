@@ -1,6 +1,8 @@
 import "./globals.css";
 import styles from "./layout.module.css";
 import { Inter } from "next/font/google";
+//import { Roboto_Slab, Alegreya_Sans_SC, Ubuntu } from "next/font/google";
+import { Footer } from "./components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,7 +27,7 @@ export default function RootLayout({
           <nav>Navigation</nav>
           <div className={styles.main}>{children}</div>
 
-          <footer>Footer</footer>
+          <Footer />
         </div>
       </body>
     </html>
