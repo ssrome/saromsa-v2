@@ -2,7 +2,7 @@ import "./globals.css";
 import styles from "./layout.module.css";
 import { Inter } from "next/font/google";
 //import { Roboto_Slab, Alegreya_Sans_SC, Ubuntu } from "next/font/google";
-import { Footer } from "./components/footer";
+import { Footer } from "./components/footer/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
