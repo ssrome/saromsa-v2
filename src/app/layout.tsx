@@ -26,7 +26,6 @@ export default function RootLayout({
           <header>Header</header>
           <nav>Navigation</nav>
           <div className={styles.main}>{children}</div>
-
           <Footer />
         </div>
       </body>
