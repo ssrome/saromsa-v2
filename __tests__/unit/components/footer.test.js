@@ -3,7 +3,7 @@ import {
   Footer,
   dateNow,
   currentYear,
-} from "../../../src/app/components/footer";
+} from "../../../src/app/components/footer/footer";
 import "@testing-library/jest-dom";
 
 describe("Footer", () => {
