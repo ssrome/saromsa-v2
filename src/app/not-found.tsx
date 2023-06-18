@@ -8,13 +8,18 @@ const anton = Anton({ weight: "400", subsets: ["latin"] });
 export default function NotFound() {
   return (
     <div className={anton.className}>
-      <h2 className={styles.errorHeader}>Not Found</h2>
+      <h2 className={styles.errorHeader} data-cy="notFound">
+        Not Found
+      </h2>
       <div className={zcool.className}>
         <p className={styles.notFoundText}>
           Sorry, the page you`re trying to view does not exist
         </p>
         <p className={styles.notFoundText}>
-          Return <Link href="/">home</Link>
+          Return{" "}
+          <Link href="/" data-cy="homeLink">
+            home
+          </Link>
         </p>
       </div>
     </div>
