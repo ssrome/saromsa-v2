@@ -5,9 +5,10 @@
   --secondary-text-color: #757575;
   --first-color: #f9f7f7;
   --second-color: #dbe2ef;
+  /* --third-color: #3f72af;  */
   --fourth-color: #112d4e;
   --divider-color: #bdbdbd;
-  --icon-color: #000;
+  --icon-color: #000000;
 }
 
 * {
