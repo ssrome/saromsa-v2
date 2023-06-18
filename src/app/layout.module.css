@@ -2,16 +2,12 @@
   margin: 0 auto;
 }
 
-.container p {
-  text-align: justify;
-}
-
 .main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 2rem;
-  min-height: 87vh;
+  min-height: 90vh;
   text-align: center;
 }
