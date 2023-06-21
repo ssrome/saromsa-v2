@@ -1,10 +1,11 @@
 import "./globals.css";
 import styles from "./layout.module.css";
-import { Inter } from "next/font/google";
+//import { Inter } from "next/font/google";
 //import { Roboto_Slab, Alegreya_Sans_SC, Ubuntu } from "next/font/google";
 import { Footer } from "./components/footer/footer";
+import { Navigation } from "./components/navigation/navigation";
 
-const inter = Inter({ subsets: ["latin"] });
+//const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "SaRomSa",
@@ -23,7 +24,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <div className={styles.container}>
-          <nav>Navigation</nav>
+          <Navigation />
 
           <div className={styles.main}>{children}</div>
           <Footer />

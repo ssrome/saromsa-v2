@@ -7,6 +7,12 @@ import {
 import "@testing-library/jest-dom";
 
 describe("Footer", () => {
+  it("renders", () => {
+    const component = render(<Footer />);
+
+    expect(component).toBeTruthy();
+  });
+
   it("renders copyright text", () => {
     render(<Footer />);
 

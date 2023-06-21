@@ -7,7 +7,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem;
+  padding: 15px 20px;
   min-height: 90vh;
   text-align: center;
 }

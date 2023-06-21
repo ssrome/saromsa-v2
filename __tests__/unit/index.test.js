@@ -3,7 +3,13 @@ import Home from "../../src/app/page";
 import "@testing-library/jest-dom";
 
 describe("Home", () => {
-  it("renders main heading", () => {
+  it("renders", () => {
+    const component = render(<Home />);
+
+    expect(component).toBeTruthy();
+  });
+
+  it("shows main heading", () => {
     render(<Home />);
 
     const heading = screen.getByRole("heading", { level: 1 });
@@ -12,7 +18,7 @@ describe("Home", () => {
     expect(heading).toHaveTextContent("Sabrina Samuel");
   });
 
-  it("renders second heading", () => {
+  it("shows second heading", () => {
     render(<Home />);
 
     const heading = screen.getByRole("heading", { level: 2 });
