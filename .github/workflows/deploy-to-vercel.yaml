@@ -10,6 +10,12 @@ jobs:
   Call-Tests-Workflow:
     uses: ./.github/workflows/tests.yaml
 
+  No-Deploy:
+    runs-on: ubuntu-latest
+    if: ${{ github.actor == 'dependabot[bot]' }}
+    steps:
+      - run: echo "Dependabot"
+
   Deploy-Preview:
     if: github.ref_name != 'main'
     runs-on: ubuntu-latest
