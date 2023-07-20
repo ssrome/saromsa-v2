@@ -16,9 +16,9 @@ jobs:
       - name: Set env DEPLOY
         run: |
           if [[ $GITHUB_EVENT_NAME == 'push']]; then
-            echo "DEPLOY=true" 
+            echo "DEPLOY=true" >> "$GITHUB_ENV"
           else
-            echo "DEPLOY=false"
+            echo "DEPLOY=false" >> "$GITHUB_ENV"
           fi
 
   Check-Dependabot:
