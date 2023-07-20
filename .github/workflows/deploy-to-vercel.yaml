@@ -3,6 +3,7 @@ name: CI/CD
 env:
   VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
   VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+  DEPLOY: true
 
 on: push
 
@@ -10,23 +11,13 @@ jobs:
   Call-Tests-Workflow:
     uses: ./.github/workflows/tests.yaml
 
-  Deploy-Type:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Set env DEPLOY
-        run: |
-          if [[ $GITHUB_EVENT_NAME == 'push']]; then
-            echo "DEPLOY=true" >> "$GITHUB_ENV"
-          else
-            echo "DEPLOY=false" >> "$GITHUB_ENV"
-          fi
-
   Check-Dependabot:
     runs-on: ubuntu-latest
     if: ${{ github.actor == 'dependabot[bot]' }}
     needs: Call-Tests-Workflow
     steps:
       - run: echo "PR created by Dependabot"
+      - run: echo "DEPLOY=false" >> $GITHUB_ENV
 
   Deploy-Preview:
     if: github.ref_name != 'main' && env.DEPLOY == true
