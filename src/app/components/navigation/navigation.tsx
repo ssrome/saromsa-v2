@@ -6,16 +6,24 @@ export function Navigation() {
     <nav className={styles.nav}>
       <ul>
         <li>
-          <Link href={"/"}>Home</Link>
+          <Link href={"/"} data-cy="nav-home-link">
+            Home
+          </Link>
         </li>
         <li>
-          <Link href={"/about"}>About</Link>
+          <Link href={"/about"} data-cy="nav-about-link">
+            About
+          </Link>
         </li>
         <li>
-          <Link href={"/projects"}>Projects</Link>
+          <Link href={"/projects"} data-cy="nav-projects-link">
+            Projects
+          </Link>
         </li>
         <li>
-          <Link href={"/contact"}>Contact</Link>
+          <Link href={"/contact"} data-cy="nav-contact-link">
+            Contact
+          </Link>
         </li>
       </ul>
     </nav>

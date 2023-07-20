@@ -12,6 +12,10 @@ describe("About page", () => {
   it("shows the header", () => {
     render(<About />);
 
-    expect(screen.getByText(/about/i)).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", {
+        name: /about/i,
+      })
+    ).toBeTruthy();
   });
 });
