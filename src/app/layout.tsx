@@ -26,7 +26,7 @@ export default function RootLayout({
         <div className={styles.container}>
           <Navigation />
 
-          <div className={styles.main}>{children}</div>
+          <main className={styles.main}>{children}</main>
           <Footer />
         </div>
       </body>

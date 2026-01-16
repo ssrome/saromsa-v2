@@ -1,0 +1,33 @@
+.pageHeading {
+  clear: both !important;
+  text-align: center;
+  margin: 1% auto;
+  width: 70%;
+  border-bottom: 5px double #e5e5e5;
+}
+
+/*  Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .pageHeading {
+    width: 50%;
+  }
+}
+
+/*  Medium devices (tablets, 768px and up) */
+/* @media (min-width: 768px) {
+  
+  } */
+
+/*  Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .pageHeading {
+    width: 30%;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .pageHeading {
+    width: 25%;
+  }
+}
